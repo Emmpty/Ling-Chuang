@@ -1,0 +1,70 @@
+{
+  "id": "ai-uniapp",
+  "name": "ai-uniapp",
+  "displayName": "灵创",
+  "version": "0.1.0",
+  "description": "ai-uniapp",
+  "keywords": [
+    "ai-uniapp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://e.coding.net/chainfish/DrawAI/ai-uniapp.git"
+  },
+  "uni_modules": {
+    "platforms": {
+      "cloud": {
+        "tcb": "y",
+        "aliyun": "y"
+      },
+      "client": {
+        "App": {
+          "app-vue": "u",
+          "app-nvue": "u"
+        },
+        "H5-mobile": {
+          "Safari": "u",
+          "Android Browser": "u",
+          "微信浏览器(Android)": "u",
+          "QQ浏览器(Android)": "u"
+        },
+        "H5-pc": {
+          "Chrome": "u",
+          "IE": "u",
+          "Edge": "u",
+          "Firefox": "u",
+          "Safari": "u"
+        },
+        "小程序": {
+          "微信": "u",
+          "阿里": "u",
+          "百度": "u",
+          "字节跳动": "u",
+          "QQ": "u",
+          "京东": "u"
+        },
+        "快应用": {
+          "华为": "u",
+          "联盟": "u"
+        },
+        "Vue": {
+          "vue2": "u",
+          "vue3": "u"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "gesti": "^1.3.29",
+    "jweixin-module": "^1.6.0",
+    "qrious": "^4.0.2",
+    "uqrcodejs": "^4.0.7"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,120 @@
+/*
+* @author: Jay
+* @description: 通过监听 css 变量切换主题色
+* @createTime: 2022-12-13 11:29:00
+* @introduce: 需要在 uni.scss 中 引入该scss
+*/
+
+//统一配置色彩
+@import "./css-variate.scss";
+
+/*---------------------方法一 使用css 控制变量  ---------------------------*/
+/*
+	使用方法
+	.css-theme {
+		width: 100%;
+		@include text-color();
+		@include base-background();
+		@include border-color();
+		@include shadow-color();
+	}
+*/
+
+/* 白天主题 颜色集合 */
+$day-theme:(
+	bg-color:$day-bg,
+	text-color:$day-text,
+	border-color: $day-border,
+	shadow-color:$day-shadow
+);
+
+/* 夜间主题 颜色集合 */
+$night-theme:(
+	bg-color:$night-bg,
+	text-color:$night-text,
+	border-color: $night-border,
+	shadow-color: $night-shadow
+);
+
+/* 玉红主题 颜色集合 */
+$jade-theme:(
+	bg-color:$jade-bg,
+	text-color:$jade-text,
+	border-color: $jade-border,
+	shadow-color: $jade-shadow
+);
+
+//定义主题对象
+$themes: (
+  day-theme: $day-theme,
+  night-theme: $night-theme,
+  jade-theme: $jade-theme
+);
+
+// 生成主题背景色样式
+@mixin base-background(){
+    @each $themename , $theme in $themes {
+        &.#{$themename} {
+            background-color: map-get($map: $theme, $key: bg-color);
+        }
+    }
+}
+
+// 生成主题字体色样式
+@mixin text-color(){
+    @each $themename , $theme in $themes {
+        &.#{$themename} {
+            color: map-get($map: $theme, $key: text-color) !important;
+        }
+    }
+}
+
+// 生成主题边框色样式
+@mixin border-color($opa: 1.0){
+    @each $themename , $theme in $themes {
+        &.#{$themename} {
+            border-color: rgba(map-get($map: $theme, $key: border-color), $opa) !important;
+        }
+    }
+}
+
+// 生成主题阴影
+@mixin shadow-color(){
+    @each $themename , $theme in $themes {
+        &.#{$themename} {
+			box-shadow: 0 16rpx 32rpx rgba(map-get($map: $theme, $key: shadow-color), 0.4);
+        }
+    }
+}
+
+/*---------------------方法二 使用css 属性选择器  ---------------------------*/
+/*
+	使用方法
+		<view class="padding-sm" :data-theme="cueTheme">
+			暗黑模式-官方自带:(只支持 白天黑夜)
+		</view>
+*/
+
+/* 白天主题 */
+[data-theme='day-theme'] {
+    background-color: $day-bg;
+    color: $day-text;
+    border-color: $day-border !important;
+    shadow-color: $day-shadow;
+}
+
+/* 夜间主题 */
+[data-theme='night-theme'] {
+    background-color: $night-bg;
+    color: $night-text;
+    border-color: $night-border !important;
+    shadow-color: $night-shadow;
+}
+
+/* 玉红主题 */
+[data-theme='jade-theme'] {
+    background-color: $jade-bg;
+    color: $jade-text;
+    border-color: $jade-border !important;
+    shadow-color: $jade-shadow;
+}

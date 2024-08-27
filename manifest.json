@@ -1,0 +1,235 @@
+{
+    "name" : "灵创",
+    "appid" : "__UNI__E91F95B",
+    "description" : "",
+    "versionName" : "1.0.1",
+    "versionCode" : 100,
+    "transformPx" : false,
+    "compatConfig" : {
+        "MODE" : 2
+    },
+    "app-plus" : {
+        "usingComponents" : true,
+        "compilerVersion" : 3,
+        "modules" : {
+            "Geolocation" : {},
+            "Payment" : {},
+            "Camera" : {},
+            "Share" : {}
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "targetSdkVersion" : 30
+            },
+            "ios" : {
+                "dSYMs" : false,
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "用于AI绘画",
+                    "NSPhotoLibraryAddUsageDescription" : "保存绘画作品",
+                    "NSCameraUsageDescription" : "拍照上传头像"
+                }
+            },
+            "sdkConfigs" : {
+                "ad" : {},
+                "geolocation" : {
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                },
+                "payment" : {
+                    "alipay" : {
+                        "__platform__" : [ "ios", "android" ]
+                    },
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "wx51e2a014a627d2b6",
+                        "UniversalLinks" : "https://drawai.cn/"
+                    }
+                },
+                "statics" : {},
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx51e2a014a627d2b6",
+                        "UniversalLinks" : "https://drawai.cn/"
+                    }
+                },
+                "oauth" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "iosStyle" : "common",
+                "androidStyle" : "common",
+                "useOriginalMsgbox" : true
+            }
+        },
+        "compatible" : {
+            "ignoreVersion" : true //true表示忽略版本检查提示框，HBuilderX1.9.0及以上版本支持  
+        },
+        "uniStatistics" : {
+            "enable" : true, //全局开启
+            "version" : "2" // 开启新版uni统计，值为字符串
+        },
+        "splashscreen" : {
+            "waiting" : true,
+            "alwaysShowBeforeRender" : true
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "wxec994b5f8ad8bfde",
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true,
+            "postcss" : true,
+            "es6" : true
+        },
+        "__usePrivacyCheck__" : true, //必须配置！
+        "plugins" : {
+            "materialPlugin" : {
+                "version" : "1.0.5",
+                "provider" : "wx4d2deeab3aed6e5a"
+            }
+        },
+        // "coral-adv": {
+        //     "version": "1.0.23", 
+        //     "provider": "wx0e203209e27b1e66"
+        // }
+        "navigateToMiniProgramAppIDList" : [ "wxec994b5f8ad8bfde" ],
+        "usingComponents" : {
+            "cell" : "plugin://materialPlugin/cell"
+        },
+        // "coral-adv": "plugin://coral-adv/adv"
+        "uniStatistics" : {
+            "enable" : false, //微信平台开启统计
+            "version" : "2" // 开启新版uni统计，值为字符串
+        },
+        "optimization" : {
+            "subPackages" : true
+        },
+        "permission" : {
+            "scope.writeClipboard" : true
+        },
+        "unipush" : {
+            "enable" : false
+        },
+        "lazyCodeLoading" : "requiredComponents"
+    },
+    "vueVersion" : "2",
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {}
+        },
+        "router" : {
+            "mode" : "history"
+        },
+        "uniStatistics" : {
+            "enable" : true,
+            "version" : "2" // 开启新版uni统计，值为字符串
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false,
+        "version" : "2", // 开启新版uni统计，值为字符串
+        "reportInterval" : "100",
+        "debug" : false
+    },
+    "mp-alipay" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-baidu" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-jd" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-kuaishou" : {
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "appid" : "ks665969798056557981"
+    },
+    "mp-lark" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-qq" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "quickapp-webview-huawei" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "quickapp-webview-union" : {
+        "uniStatistics" : {
+            "enable" : false,
+            "version" : "2" // 开启新版uni统计，值为字符串
+        }
+    }
+}

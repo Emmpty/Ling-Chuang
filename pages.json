@@ -1,0 +1,685 @@
+{
+  "easycom": {
+    "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/tabBar/gallery",
+      "style": {
+        "navigationBarTitleText": "画廊",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#141416",
+        "navigationBarBackgroundColor": "#141416",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/tabBar/index",
+      "style": {
+        "navigationBarTitleText": "画板",
+        "navigationBarBackgroundColor": "#141416",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/tabBar/clip",
+      "style": {
+        "navigationBarTitleText": "画夹",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#141416",
+        "navigationBarBackgroundColor": "#141416",
+        "navigationBarTextStyle": "white",
+        "app-plus": {
+          "pullTopRefresh": {
+            "support": true,
+            "style": "circle",
+            "color": "#141416"
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/tabBar/mnie",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#141416",
+        "usingComponents": {
+          // #ifdef MP-WEIXIN
+          "cell": "plugin://materialPlugin/cell"
+          //#endif
+        }
+      }
+    },
+    {
+      "path": "pages/tabBar/laboratory",
+      "style": {
+        "navigationBarTitleText": "实验室",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#141416",
+        "usingComponents": {}
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "plogin",
+      "pages": [
+        {
+          "path": "login",
+          "style": {
+            "navigationBarTitleText": "登录",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationBarTextStyle": "white",
+            "navigationStyle": "custom",
+            "app-plus": {
+              "titleNView": false
+            }
+          }
+        },
+        {
+          "path": "logintype",
+          "style": {
+            "navigationBarTitleText": "登录",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationBarTextStyle": "white",
+            "navigationStyle": "custom",
+            "app-plus": {
+              "titleNView": false
+            }
+          }
+        },
+        {
+          "path": "forget",
+          "style": {
+            "navigationBarTitleText": "忘记密码",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationBarTextStyle": "white",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "privacy_agree",
+          "style": {
+            "navigationBarTitleText": "隐私协议",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationBarTextStyle": "white",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "user_agree",
+          "style": {
+            "navigationBarTitleText": "用户协议",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationBarTextStyle": "white",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "register",
+          "style": {
+            "navigationBarTitleText": "注册",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pmnie",
+      "pages": [
+        {
+          "path": "mnie/getmana",
+          "style": {
+            "navigationBarTitleText": "获取免费灵力",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+            // "mp-weixin": {
+            // 	"usingComponents": {
+            // 	    "coral-adv": "plugin://coral-adv/adv"
+            // 	}
+            // }
+          }
+        },
+        {
+          "path": "mnie/recharge",
+          "style": {
+            "navigationBarTitleText": "充值中心",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/addedlist",
+          "style": {
+            "navigationBarTitleText": "增值服务明细",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/cash",
+          "style": {
+            "navigationBarTitleText": "灵石提现",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/cashlist",
+          "style": {
+            "navigationBarTitleText": "记录明细",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/help",
+          "style": {
+            "navigationBarTitleText": "帮助中心",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/poster",
+          "style": {
+            "navigationBarTitleText": "海报",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/redeem",
+          "style": {
+            "navigationBarTitleText": "提现",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/webview",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416"
+          }
+        },
+        {
+          "path": "mnie/detailed",
+          "style": {
+            "navigationBarTitleText": "明细",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/evidence",
+          "style": {
+            "navigationBarTitleText": "存证确权",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/evdetail",
+          "style": {
+            "navigationBarTitleText": "存证详情",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/evsearch",
+          "style": {
+            "navigationBarTitleText": "区块链证书查询",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/certificate",
+          "style": {
+            "navigationBarTitleText": "证书详情",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/updatelog",
+          "style": {
+            "navigationBarTitleText": "更新日志",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "mnie/paystatus",
+          "style": {
+            "navigationBarTitleText": "支付结果",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416"
+          }
+        }
+      ]
+    },
+    {
+      "root": "plaboratory",
+      "pages": [
+        {
+          "path": "ClayStyle",
+          "style": {
+            "navigationBarTitleText": "黏土风儿童节",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "dress",
+          "style": {
+            "navigationBarTitleText": "万圣节装扮",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "详情",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "box",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "AIProductImage",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "AICutout",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "AIProductScan",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "cropping",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "applydetail",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "phome",
+      "pages": [
+        {
+          "path": "refine",
+          "style": {
+            "navigationBarTitleText": "制作完成",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "analysis",
+          "style": {
+            "navigationBarTitleText": "关键词解析",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "ending",
+          "style": {
+            "navigationBarTitleText": "关键词解析",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "make",
+          "style": {
+            "navigationBarTitleText": "制作中",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "watermark",
+          "style": {
+            "navigationBarTitleText": "抖音加水印",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "generate",
+          "style": {
+            "navigationBarTitleText": "开始生成",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "搜索",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "lottery/turntable",
+          "style": {
+            "navigationBarTitleText": "抽奖",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "lottery/record",
+          "style": {
+            "navigationBarTitleText": "抽奖记录",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "activity/activity",
+          "style": {
+            "navigationBarTitleText": "活动特惠",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "BlindBox/BlindBox",
+          "style": {
+            "navigationBarTitleText": "抽奖",
+            "enablePullDownRefresh": true,
+            "navigationBarBackgroundColor": "#C3D8FF",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "BlindBox/rule",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "BlindBox/detail",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": true,
+            "navigationBarBackgroundColor": "#C3D8FF",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "BlindBox/history",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "BlindBox/rankingList",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": true,
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pclip",
+      "pages": [
+        {
+          "path": "draftlist",
+          "style": {
+            "navigationBarTitleText": "画册集",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "enablePullDownRefresh": true,
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "详情",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "large",
+          "style": {
+            "navigationBarTitleText": "详情",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "largedetali",
+          "style": {
+            "navigationBarTitleText": "详情",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "collection",
+          "style": {
+            "navigationBarTitleText": "合集",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "search",
+          "style": {
+            "navigationBarTitleText": "搜索",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "custom",
+          "style": {
+            "navigationBarTitleText": "局部重绘",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416"
+          }
+        }
+      ]
+    },
+    {
+      "root": "psetup",
+      "pages": [
+        {
+          "path": "updatephone",
+          "style": {
+            "navigationBarTitleText": "更换手机号",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "setup",
+          "style": {
+            "navigationBarTitleText": "设置",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "personal",
+          "style": {
+            "navigationBarTitleText": "个人资料",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "homepage",
+          "style": {
+            "navigationBarTitleText": "个人主页",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "followlist",
+          "style": {
+            "navigationBarTitleText": "关注列表",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "fanlist",
+          "style": {
+            "navigationBarTitleText": "粉丝列表",
+            "navigationBarTextStyle": "white",
+            "navigationBarBackgroundColor": "#141416",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+      // "plugins": {
+      // 	"pluginName": {
+      // 		"version": "1.0.23",
+      // 		"provider": "plugin://coral-adv/adv"
+      // 	}
+      // }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "灵创",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#141416"
+    // "usingComponents": {
+    //     "coral-adv": "plugin://coral-adv/adv"
+    // }
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#8F8F94",
+    "selectedColor": "#07B894",
+    "backgroundColor": "#141416",
+    "list": [
+      {
+        "text": "画廊",
+        "pagePath": "pages/tabBar/gallery",
+        "selectedIconPath": "static/img/tabbar/information_tncur.png",
+        "iconPath": "static/img/tabbar/information_tncur1.png"
+      },
+      {
+        "text": "实验室",
+        "pagePath": "pages/tabBar/laboratory",
+        "selectedIconPath": "static/img/tabbar/tabicon2.png",
+        "iconPath": "static/img/tabbar/tabicon22.png"
+      },
+      {
+        "text": "创作",
+        "pagePath": "pages/tabBar/index",
+        "selectedIconPath": "static/img/tabbar/home_tncur.png",
+        "iconPath": "static/img/tabbar/home_tncur1.png"
+      },
+      {
+        "text": "画夹",
+        "pagePath": "pages/tabBar/clip",
+        "iconPath": "static/img/tabbar/case_tncur1.png",
+        "selectedIconPath": "static/img/tabbar/case_tncur.png"
+      },
+      {
+        "pagePath": "pages/tabBar/mnie",
+        "iconPath": "static/img/tabbar/mine_tncur1.png",
+        "selectedIconPath": "static/img/tabbar/mine_tncur.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

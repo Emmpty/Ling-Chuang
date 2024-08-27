@@ -1,0 +1,65 @@
+/*
+	主题 统一配置色彩
+*/
+
+//页面背景色
+$page-bg:var(--page-bg,#FFFFFF);
+
+// 白天主题
+$day-bg: #FFFFFF;  // 背景颜色
+$day-text: #141416; // 文字颜色
+$day-border: #c8c7cc;
+$day-shadow: #c8c7cc;
+$day-font-info-color: #8A8A8A;
+$day-content-bg-color:#FFFFFF;
+$day-nav-border-color:rgba(0, 0, 0, 0.1);
+$day-nva-bg-color:rgba(255, 255, 255, 0.6);
+$day-page-bg-color:#F5F5F5;
+
+// 夜间主题
+$night-bg: #141416 ;
+$night-text: #FFFFFF;
+$night-border: #141416;
+$night-shadow: #141416;
+$night-font-info-color: #141416;
+$night-content-bg-color:linear-gradient(226deg, #172828 0%, #0F1817 100%);
+$night-nav-border-color:rgba(255, 255, 255, 0.25);
+$night-nva-bg-color:rgba(0, 0, 0, 0.15);
+$night-page-bg-color:#141416;
+
+// 玉红主题
+$jade-bg: #c04851;
+$jade-text: #FFFFFF;
+$jade-border: #eea2a4;
+$jade-shadow: #f1939c;
+
+/*
+	需要在js 中使用的css 导出
+		APP 无法使用
+		h5 微信小程序有值
+*/
+
+:export {
+	dayBg: $day-bg;  //背景颜色
+	dayText: $day-text; //字体颜色
+  dayBoderColor:$day-border;
+  dayShadowColor: $day-shadow;
+  dayFontInfoColor: $day-font-info-color;
+  dayContentBgColor: $day-content-bg-color;
+  dayBoderColor: $day-nav-border-color;
+  dayNavBgColor: $day-nva-bg-color;
+  dayPageBgColor:$day-page-bg-color;
+
+	nightBg: $night-bg;//背景颜色
+	nightText: $night-text;//字体颜色
+  nightboderColor: $night-border;
+  nightBoderColor: $night-shadow;
+  nightShadowColor: $night-font-info-color;
+  nightContentBgColor: $night-content-bg-color;
+  nightBoderColor: $night-nav-border-color;
+  nightNavBgColor: $night-nva-bg-color;
+  nightPageBgColor:$night-page-bg-color;
+
+	jadeBg: $jade-bg;//背景颜色
+	jadeText: $jade-text;//字体颜色
+}
